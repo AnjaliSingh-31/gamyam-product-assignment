@@ -1,0 +1,341 @@
+/* ---------- Global Layout ---------- */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fd;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+/* ---------- Dashboard Header ---------- */
+.dashboard-header {
+  background: linear-gradient(90deg, #6a5bff, #8a56f7);
+  padding: 35px 60px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-title {
+  opacity: 0.85;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.dashboard-title {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.big-btn {
+  padding: 13px 24px;
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+/* ---------- Container ---------- */
+.container {
+  max-width: 1250px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* ---------- Stats Section ---------- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  padding: 22px;
+  border-radius: 14px;
+  background: white;
+  font-weight: 600;
+  font-size: 17px;
+  color: white;
+}
+
+.stat-card h2 {
+  margin-top: 6px;
+  font-size: 34px;
+}
+
+.purple {
+  background: linear-gradient(90deg, #6253e7, #7c54ed);
+}
+.pink {
+  background: linear-gradient(90deg, #f75571, #e3499c);
+}
+.blue {
+  background: linear-gradient(90deg, #03c8ff, #36aaff);
+}
+.green {
+  background: linear-gradient(90deg, #25e68b, #00c76a);
+}
+
+/* ---------- Search + View Toggle ---------- */
+.controls-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.search-box {
+  flex: 1;
+  max-width: 480px;
+  border-radius: 13px;
+  border: none;
+  padding: 16px 20px;
+  background: #ffffff;
+  font-size: 16px;
+  box-shadow: 0px 0px 9px rgba(151, 151, 192, 0.15);
+}
+
+.toggle-view {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  padding: 4px;
+  box-shadow: 0px 0px 8px rgba(151, 151, 192, 0.15);
+}
+
+.toggle-view button {
+  border: none;
+  background: none;
+  padding: 11px 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.toggle-view button.active {
+  background: #6a5bff;
+  color: white;
+}
+
+/* ---------- Grid Cards Styling ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(151, 151, 192, 0.15);
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  margin: 10px 0 6px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 14px;
+  color: #6a6a6a;
+  min-height: 55px;
+}
+
+.category-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  background: #eceaff;
+  color: #6a5bff;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.price-tag {
+  font-size: 22px;
+  margin: 10px 0;
+  font-weight: 700;
+  color: #6448ff;
+}
+
+.stock-badge {
+  display: inline-block;
+  padding: 6px 13px;
+  font-size: 14px;
+  border-radius: 15px;
+  background: #eafdf2;
+  color: #00a761;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.card button {
+  border: none;
+  background: #6a5bff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.card button:hover {
+  background: #5b4ae6;
+}
+
+/* ---------- Table (List View) ---------- */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(151, 151, 192, 0.15);
+}
+
+.product-table th {
+  background: #eceaff;
+  padding: 14px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  color: #5748d6;
+}
+
+.product-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f0f0f8;
+}
+
+.product-table tr:hover td {
+  background: #f6f4ff;
+}
+
+.product-table button {
+  border: none;
+  background: #6a5bff;
+  padding: 7px 13px;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------- Pagination ---------- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.pagination button {
+  border: none;
+  padding: 8px 13px;
+  background: #dfe3ff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #c4cbff;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ---------- Modal ---------- */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-card {
+  background: white;
+  width: 430px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+  animation: popup 0.25s ease;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-card h2 {
+  margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.modal-card label {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+.modal-card input,
+.modal-card textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d4d4e3;
+  background: #fafaff;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.primary {
+  background: #6a5bff !important;
+  color: white !important;
+}
+
+.big-btn:hover,
+.primary:hover {
+  background: #5748e5 !important;
+}
+
+.error {
+  color: #d1003c;
+  font-size: 12px;
+}
+
